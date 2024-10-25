@@ -56,6 +56,10 @@ func newGClient() *gClient {
 	}
 }
 
+func (c *gClient) SetCookie(cookie string) {
+    c.cookie = cookie
+}
+
 func (c *gClient) defaultParams() url.Values {
 	out := make(map[string][]string, len(c.defParams))
 	for i, v := range c.defParams {
