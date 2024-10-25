@@ -56,8 +56,8 @@ func newGClient() *gClient {
 	}
 }
 
-func (c *gClient) SetCookie(cookie string) {
-    c.cookie = cookie
+func SetCookie(cookie string) {
+    client.cookie = cookie
 }
 
 func (c *gClient) defaultParams() url.Values {
